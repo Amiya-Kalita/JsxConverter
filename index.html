@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- seo friendly code started here -->
+<!-- Primary Meta Tags -->
+<title>HTML to JSX Converter - Free Online Tool for React Developers</title>
+<meta name="title" content="HTML to JSX Converter - Free Online Tool for React Developers">
+<meta name="description" content="Convert HTML to JSX instantly with our free online converter tool. Transform HTML code to React JSX syntax with automatic class to className conversion, style transformation, and more. Perfect for React developers.">
+<meta name="keywords" content="HTML to JSX, JSX converter, React converter, HTML to React, convert HTML to JSX, React JSX transformer, className converter, HTML React syntax, JSX transformation tool, online JSX converter">
+<meta name="author" content="Your Name or Company">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://yourwebsite.com/html-to-jsx-converter">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com/html-to-jsx-converter">
+<meta property="og:title" content="HTML to JSX Converter - Transform HTML to React Code">
+<meta property="og:description" content="Free online tool to convert HTML code to React JSX. Transform class to className, style attributes to objects, and more. Perfect for React developers.">
+<meta property="og:image" content="https://yourwebsite.com/html-to-jsx-converter-og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://yourwebsite.com/html-to-jsx-converter">
+<meta property="twitter:title" content="HTML to JSX Converter - Free Tool for React Developers">
+<meta property="twitter:description" content="Convert HTML to JSX with one click. Free online converter for React developers. Transform HTML syntax to React JSX format instantly.">
+<meta property="twitter:image" content="https://yourwebsite.com/html-to-jsx-converter-twitter-image.jpg">
+
+<!-- Structured Data / Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "HTML to JSX Converter",
+  "url": "https://yourwebsite.com/html-to-jsx-converter",
+  "description": "Free online tool to convert HTML code to React JSX format. Transform HTML attributes and syntax to JSX automatically.",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "screenshot": "https://yourwebsite.com/html-to-jsx-converter-screenshot.jpg",
+  "featureList": "Convert class to className, HTML comments to JSX comments, inline styles to style objects, self-closing tags",
+  "creator": {
+    "@type": "Organization",
+    "name": "Your Company Name",
+    "url": "https://yourwebsite.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "156"
+  }
+}
+</script>
+
+<!-- Additional performance and SEO optimization tags -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4f46e5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+<!-- seo friendly code ends here -->
+    <meta name="description" content="Free online HTML to JSX converter for React developers. Transform HTML code to JSX syntax instantly.">
+    <meta name="keywords" content="HTML to JSX, JSX converter, React, HTML converter, JavaScript, JSX transformation">
+    <title>HTML to JSX Converter | Transform HTML to React JSX Code</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span>HTML to JSX</span>
+                </a>
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            <p class="header-subtitle">Transform HTML code into React JSX syntax instantly</p>
+        </header>
+
+        <main>
+            <div class="converter-container">
+                <div class="editor-container html-editor">
+                    <div class="editor-header">
+                        <div class="editor-title">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML Input</span>
+                        </div>
+                        <div class="editor-actions">
+                            <button class="btn btn-tooltip" data-tooltip="Clear HTML" id="clearHtml">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <button class="btn btn-tooltip" data-tooltip="Paste from clipboard" id="pasteHtml">
+                                <i class="fas fa-paste"></i>
+                            </button>
+                            <button class="btn btn-tooltip" data-tooltip="Load example" id="loadExample">
+                                <i class="fas fa-lightbulb"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="editor">
+                        <div class="line-numbers" id="htmlLineNumbers"></div>
+                        <textarea id="htmlInput" placeholder="Paste your HTML code here..."></textarea>
+                    </div>
+                </div>
+
+                <div class="editor-container jsx-editor">
+                    <div class="editor-header">
+                        <div class="editor-title jsx">
+                            <i class="fab fa-react"></i>
+                            <span>JSX Output</span>
+                        </div>
+                        <div class="editor-actions">
+                            <button class="btn btn-tooltip" data-tooltip="Copy to clipboard" id="copyJsx">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <button class="btn btn-tooltip" data-tooltip="Download as .jsx file" id="downloadJsx">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <button class="btn btn-tooltip" data-tooltip="Prettify code" id="prettifyJsx">
+                                <i class="fas fa-magic"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="editor">
+                        <div class="line-numbers" id="jsxLineNumbers"></div>
+                        <textarea id="jsxOutput" placeholder="Your JSX code will appear here..." readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="convertBtn" class="btn-primary">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Convert to JSX</span>
+                    <div class="loading" id="loadingIndicator"></div>
+                </button>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Conversion</h3>
+                    <p class="feature-desc">Automatically converts HTML attributes to JSX format (class → className, for → htmlFor)</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="feature-title">Style Objects</h3>
+                    <p class="feature-desc">Transforms inline CSS strings to React style objects with camelCase properties</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3 class="feature-title">Self-Closing Tags</h3>
+                    <p class="feature-desc">Properly formats self-closing tags to comply with JSX syntax requirements</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <h3 class="feature-title">Comment Conversion</h3>
+                    <p class="feature-desc">Converts HTML comments to JSX comments: <!-- comment --> to {/* comment */}</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">About</a>
+                    <a href="#" class="footer-link">Documentation</a>
+                    <a href="#" class="footer-link">GitHub</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+                <p class="copyright">© 2023 HTML to JSX Converter. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="notification" id="notification">
+        <i class="notification-icon fas fa-check-circle"></i>
+        <span id="notificationMessage">Notification message</span>
+        <button class="notification-close" id="notificationClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
